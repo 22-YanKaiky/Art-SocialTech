@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Art SocialTech</title>
+</head>
+
+<body>
+    <header>
+        <h3><a href="#">Home</a></h3>
+
+        <h3><a href="#">Notícias</a></h3>
+
+        <h3><a href="#">Viagens</a></h3>
+
+        <h3><a href="#">Imagens</a></h3>
+
+        <h3><a href="https://disney.com.br/" target="_blank">Disney</a></h3>
+
+        <h3><a href="https://www.dreamworks.com/" target="_blank">DreamWorks</a></h3>
+    </header>
+
+    <!-- <header id="cabecalho">
+        <hgroup>
+            <h2>Art SocialTech</h2>
+        </hgroup>
+
+        <img id="icone" src="_imagens/glass-oculos-preto-peq.png" alt="Oculos preto pequeno">
+
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="circle">
+                <li onmouseover="mudaFoto('_imagens/home.png')"
+                    onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                    onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a>
+                </li>
+                <li onmouseover="mudaFoto('_imagens/fotos.png')"
+                    onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseout="mudaFoto('_imagens/multimidia.png')"
+                    onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a
+                        href="multimidia.html">Multimídia</a></li>
+                <li onmouseover="mudaFoto('_imagens/contato.png')"
+                    onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale
+                        Conosco</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <section id="container">
+        <form action="" method="post">
+            <div class="pessoal">
+                <label for="nome">
+                    <input type="text" id="nome" placeholder="Nome">
+                </label>
+
+                <label for="sobrenome">
+                    <input type="text" id="sobrenome" placeholder="Sobrenome">
+                </label>
+            </div>
+
+            <div class="pessoal">
+                <label for="email">
+                    <input type="email" id="email" placeholder="Email">
+                </label>
+
+                <label for="telefone">
+                    <input type="tel" id="telefone" placeholder="Telefone">
+                </label>
+            </div>
+
+            <label for="Data de Nascimento">
+                <input type="date" id="data-nascimento" placeholder="Data de Nascimento">
+            </label>
+
+            <h2>Gênero</h2>
+            <div class="div-input-radios">
+                <label for="masculino">
+                    <input type="radio" name="genero" id="masculino" value="Masculino"> Masculino
+                </label>
+
+                <label for="feminino">
+                    <input type="radio" name="genero" id="feminino" value="Feminino"> Feminino
+                </label>
+
+                <label for="pref-nao-informar">
+                    <input type="radio" name="genero" id="pref-nao-informar" value="Prefiro-Não-Informar"> Prefiro Não
+                    Informar
+                </label>
+            </div><!-- class="div-input-radios" -->
+
+            <h2>PCD</h2>
+            <select name="PCS" id="pcd">
+                <option value="Selecione" selected disabled>Selecione</option>
+                <option value="Nao">Não</option>
+                <option value="Sim">Sim</option>
+            </select>
+
+            <h2>Você Possui Filhos?</h2>
+            <div class="div-input-radios">
+                <label for="filhos-sim">
+                    <input type="radio" name="filhos" id="filhos-sim" value="Sim"> Sim
+                </label>
+
+                <label for="filhos-nao">
+                    <input type="radio" name="filhos" id="filhos-nao" value="Nao"> Não
+                </label>
+            </div><!-- class="div-input-radios" -->
+
+            <label for="rua">
+                <input type="text" id="rua" placeholder="Rua">
+                <input type="number" id="numero" placeholder="Número">
+            </label>
+
+            <div class="endereco">
+                <label for="">
+                    <input type="text" id="bairro" placeholder="Bairro">
+                    <input type="text" id="cep" placeholder="CEP">
+                </label>
+            </div>
+
+            <div class="endereco">
+                <label for="">
+                    <input type="text" id="cidade" placeholder="Cidade">
+                    <input type="text" id="estado" maxlength="2" placeholder="UF">
+                </label>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        &copy; Yan Kaiky
+    </footer>
+
+    <div>
+        <img class="cards-image" src="./images/artes-tecnologia.jpg">
+        <small>Por <a href="https://www.pexels.com/pt-br/foto/pintura-com-luz-a-noite-327509/">PIXABAY no
+                Pexels</a></small>
+    </div>
+
+    <div class="texto-sobre">
+        <h2>Imagens são realmente importantes?</h2>
+        <p>
+            <strong>MUITO!</strong> Elas são capazes de deixar e transmitir uma mensagem, além de ter um grande elemento
+            emocional que
+            desperta sentimentos como raiva, compaixão, tristeza, curiosidade e até mesmo te fazem comprar por impulso.
+
+            Se você precisa de número para acreditar, saiba que de acordo com uma pesquisa realizada pela Forrester, 90%
+            da
+            informação transmitida ao cérebro são visuais. Ela é processada 60.000 vezes mais rapidamente do que os
+            textos!
+            40% das pessoas reagem melhor a imagens que a textos e nas mídias sociais esses índices sobem para 44%.
+            Posts
+            com imagens recebem 94% mais visitas e engajamento do que os que não possuem.
+
+            FONTE: <a
+                href="https://www.publicitarioscriativos.com/a-importancia-de-uma-imagem/">https://www.publicitarioscriativos.com/a-importancia-de-uma-imagem/</a>
+        </p>
+    </div>
+
+    <div class="content-img">
+        <p class="texto-sobre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis illo id tempore deleniti, saepe placeat
+            expedita, pariatur quam ipsum vitae, iusto iste aliquid. Soluta nihil voluptatibus ab id deleniti.
+        </p>
+
+        <div class="image-vertical">
+            <img src="./images/portao-disneylandia.jpg"></br>
+            <small>Por <a href="https://www.pexels.com/pt-br/foto/antigo-antepassados-anciao-arquitetura-8184000/">David Guerrero</a> no Pexels</small>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
