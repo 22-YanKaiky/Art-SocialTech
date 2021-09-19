@@ -17,8 +17,7 @@ header {
     align-items: center;
     height: 4rem;
     background-image: url(../images/ray-neongif);
-    /* -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    filter: hue-rotate(45deg);
 }
 
 header > img {
@@ -45,6 +44,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 3rem 0;
+    margin-bottom: 5rem;
 }
 
 form > button {
@@ -92,7 +92,7 @@ input[type="date"] {
     background: rgb(255, 255, 255);
     border-radius: 8px;
     padding: 15px;
-    width: 100%;
+    width: 93%;
 }
 
 input[type="date"], focus {
