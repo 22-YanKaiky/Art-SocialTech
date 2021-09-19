@@ -14,8 +14,11 @@ body {
 header {
     display: flex;
     justify-content: space-around;
-    background-color: yellow;
     align-items: center;
+    height: 4rem;
+    background-image: url(../images/ray-neongif);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 header > img {
@@ -25,7 +28,8 @@ header > img {
 
 header > h3 > a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 19pt;
 }
 
 header > h3 > a:hover {
@@ -43,6 +47,16 @@ form {
     margin: 3rem 0;
 }
 
+form > button {
+    background-color: #04C35C;
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    font-weight: 900;
+    color: white;
+    font-size: 15pt;
+}
+
 label {
     margin: 15px 0;
 }
@@ -56,18 +70,36 @@ input[type='text'], [type='email'], [type='tel'], [type='number'] {
 }
 
 input[type='radio'] {
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }
 
-input[type='date'] {
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #2c3e50;
+}
+
+input[type="date"] {
+    -webkit-appearance: none;
+    color: #95a5a6;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 18px;
+    border:1px solid #ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
     border: 3px solid red;
-    color: #000000;
     background: rgb(255, 255, 255);
     border-radius: 8px;
     padding: 15px;
-    font-size: 13pt;
-    width: 94%;
+    width: 100%;
+}
+
+input[type="date"], focus {
+    color: #95a5a6;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
 }
 
 input:focus {
@@ -78,7 +110,12 @@ div.div-input-radios {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 15pt;
+    font-size: 16pt;
+}
+
+div.div-input-radios > label {
+    display: flex;
+    align-items: center;
 }
 
 select#pcd {
@@ -89,6 +126,10 @@ select#pcd {
     padding: 15px;
     font-size: 13pt;
     color: #000000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat;
+    background-position: 95% center;
 }
 
 select#pcd:focus {
@@ -108,15 +149,17 @@ div.endereco, div.pessoal {
 
 footer {
     height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     color: white;
     background-color: red;
     bottom: 0;
     position: fixed;
     width: 100%;
+}
+
+footer > div.social-media {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 img.cards-image {
@@ -147,38 +190,3 @@ div.content-img {
 div.content-img > p {
     text-align: justify;
 }
-
-
-
-/* 
-
-header#cabecalho {
-    border-bottom: 1px #606060 solid;
-    height: 150px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
-}
-
-header#cabecalho h1 {
-    font-family: Fonte_logo, Ubuntu, sans-serif;
-    font-size: 30pt;
-    color: #606060;
-    text-shadow: 1px 1px 1px black;
-    padding: 0px;
-    margin-bottom: 10px;
-}
-
-header#cabecalho h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 10pt;
-    color: #888888;
-    padding: 0px;
-    margin-top: 0px;
-}
-
-header#cabecalho img#icone {
-    position: absolute;
-    left: 780px;
-    top: 70px;
-    width: 135px;
-    height: 135px;
-} */
